@@ -1,0 +1,48 @@
+/* html {
+    overflow-x: hidden;
+ } */
+
+.sticky-topbar {
+width: 100%;
+}
+
+.wrapper {
+    float: center;
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 30px;
+}
+
+.greeting {
+    margin: 40px 0;
+    /* max-width: 650px; */
+}
+
+.current {
+    margin: 200px 0;
+}
+
+.current-Message {
+    padding: 20px 0;
+}
+
+.hbar-right {
+    background-color: #bf9000;
+    height: 10px;
+    margin: 30px 0 50px 0px;
+}
+
+.vbar {
+    background-color: #bf9000;
+    height: 200px;
+    width: 8px;
+    margin: 30px 15px 50px 0px;
+}
+
+.large-font {
+    font-size: 50px;
+}
+
+.medium-font {
+    font-size: 40px;
+}
