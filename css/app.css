@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', sans-serif!important;
+}
+
+
 /* Nav: */
 .sticky-topbar {
     width: 100%;
@@ -12,7 +17,7 @@
 .wrapper {
     float: center;
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 1000px;
     padding: 30px;
 }
 
@@ -20,6 +25,11 @@
     background-color: #bf9000;
     height: 10px;
     margin: 30px 0 50px 0px;
+}
+
+.hbar-center {
+    background-color: #fff;
+    color: #fff;
 }
 
 .vbar {
@@ -31,24 +41,58 @@
 
 .large-font {
     font-size: 50px;
+    font-family: 'Lato', sans-serif!important;
 }
 
 .medium-font {
     font-size: 40px;
+    font-family: 'Lato', sans-serif!important;
 }
 
 
 /* Greeting/splash: */
 .greeting {
     margin: 30px 0;
-    height: calc(100vh * .9);
+    height: calc(100vh * .8);
     /* border: 1px solid black; */
+}
+
+.greeting-two {
+    /* border: 1px solid black; */
+    padding: 15px;
+    background-color: #e7cd3b;
+    margin: 30px 0;
+    height: calc(100vh * .7);
+    color: #fff;
+}
+
+.greeting-message {
+    /* border: 1px solid black; */
+    position: relative;
+    margin: 30px 0;
+    height: calc(100vh * .7);
+}
+
+.greeting-two-small {
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    color:rgb(58, 55, 55);
+    font-weight: 700;
+    padding:10px 20px;
+}
+
+.greeting-font {
+    font-size: 28px;
+    font-family: 'Lato', sans-serif!important;
 }
 
 
 /* Current activity and grid: */
 .current {
-    height: calc(100vh * .9);
+    margin: 30px 0 40px 0;
+    height: calc(100vh * .8);
     /* border: 1px solid black; */
 }
 
@@ -57,6 +101,7 @@
 }
 
 .current-wrapper {
+    margin: 25px 0 0 0;
     display: grid;
     background-color: darkgray;
     grid-template-columns: repeat(3, 1fr);
@@ -100,7 +145,15 @@
 
 
 /* Portfolio section and cards: */
+
+.portfolio {
+    margin: 60px 0 0 0;
+    height: calc(100vh * .8);
+    /* border: 1px solid black; */
+}
+
 .portfolio-grid {
+    margin: 20px 0 0 0;
     overflow-y:scroll;
     height:500px;
 }
@@ -142,7 +195,8 @@
 .portfolio-grid::-webkit-scrollbar-thumb {
     background-color:#babac0;
     border-radius:16px;
-    border:4px solid #fff
+    border:4px solid #fff;
+    /* height: 60px;; */
 }
 
 .portfolio-grid::-webkit-scrollbar-button {display:none}
@@ -150,6 +204,10 @@
 
 
 /* Portfolio page: */
+.links {
+    padding: 0 0 20px 15px;
+}
+
 .info-block {
     height:150px;
     width:150px;
@@ -163,9 +221,34 @@
 }
 
 
+
 /* Media queries: */
-@media only screen and (max-width: 768px) {
+
+
+@media only screen and (max-width: 640px) {
     .current-wrapper {
        display: block;
+       /* margin: 25px 0 50px 0; */
+
     }
+    .current-grid {
+        margin: 0 !important;
+    }
+    .portfolio {
+        margin: 300px 0 0 0;
+        height: calc(100vh * .8);
+        /* border: 1px solid black; */
+    }
+
+    .vbar {
+        display: hidden;
+    }
+
+    .hbar-center {
+        background-color: #bf9000;
+        height: 10px;
+        margin: 30px 0 50px 0px;
+    }
+
 }
+
