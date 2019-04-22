@@ -18,6 +18,21 @@ body {
     padding:0px !important;
 }
 
+.custom-topbar a {
+    color:rgb(88, 84, 84);
+    padding: 10px 5px;
+    font-size:18px; 
+    font-weight: 600;
+    font-family: 'Lato', sans-serif!important;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+}
+.icons {
+    font-size: 24px;
+    margin: 5px;
+}
 /* Body and common styling: */
 .wrapper {
     float: center;
@@ -114,7 +129,7 @@ body {
 
 /* Current activity and grid: */
 .current {
-    margin: 30px 35px 40px 35px;
+    /* margin: 40px 35px 40px 35px; */
     padding: 15px;
     background-color: rgba(19, 19, 16, 0.075);
     /* height: calc(100vh * .8); */
@@ -185,7 +200,7 @@ body {
 }
 
 .message-small {
-    font-size: 16px;
+    font-size: 18px;
     color:rgb(58, 55, 55);
     font-weight: 700;
     /* padding: 10px 5px; */
@@ -202,7 +217,7 @@ body {
 
 .portfolio {
     margin: 60px 0 0 0;
-    height: calc(100vh * .8);
+    /* height: calc(100vh * .8); */
     /* border: 1px solid black; */
 }
 
@@ -229,10 +244,18 @@ body {
     height: 120px;
 }
 
+.label {
+    border-radius: 12px;
+    margin: 3px;
+    font-size: 12px;
+    opacity: .7;
+}
+
 .card-descrip {
     padding: 10px 0;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif!important;
 }
 
 
@@ -255,6 +278,19 @@ body {
 
 .portfolio-grid::-webkit-scrollbar-button {display:none}
 
+
+/* Contact section */
+
+.contact {
+    margin: 50px 20px;
+}
+
+.contact-grid {
+    padding: 25px 15px;
+    background-color: #e7cd3bc9;
+    margin: 30px 0;
+    height: calc(100vh * .7);
+}    
 
 
 /* Portfolio page: */
@@ -340,14 +376,19 @@ body {
     .current-grid {
         margin: 0 !important;
     }
+
+    .current-message {
+        margin: 0;
+    
+    }
     .portfolio {
-        margin: 300px 0 0 0;
+        /* margin: 300px 0 0 0; */
         height: calc(100vh * .8);
         /* border: 1px solid black; */
     }
 
     .vbar {
-        display: hidden;
+        display: none;
     }
 
     .hbar-center {
