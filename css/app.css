@@ -27,7 +27,7 @@ body {
     padding:0px !important;
 }
 
-.custom-topbar a {
+.custom-topbar a{
     color:rgb(58, 55, 55);
     padding: 10px 0px;
     margin: 0 10px;
@@ -169,9 +169,13 @@ body {
 }
 
 
-/* more info section */
-.more-info {
+/* about section */
+.about{
     padding: 80px 10px;
+}
+
+.about-grid {
+    max-width: 90vw!important;
 }
 
 .icons {
@@ -179,6 +183,10 @@ body {
     margin: 5px;
     font-weight: 600;
     color: rgb(58, 55, 55);
+}
+
+.info-link:hover {
+    background-color: #e7cd3be0;
 }
 
 /* Current activity and grid: */
@@ -197,6 +205,11 @@ body {
 
 .current-message {
     margin: 0 20px 60px 20px;
+}
+
+.current-message a{
+    color: inherit;
+    text-decoration: none;
 }
 
 .custom-card {
@@ -231,6 +244,7 @@ body {
 
 #contact {
     margin: 50px 20px;
+
 }
 
 .contact-form {
@@ -239,8 +253,8 @@ body {
 
 .contact-grid {
     padding: 25px 15px;
-    background-color: #e7cd3be0;
     margin: 30px 0;
+    background-color: #e7cd3b;
     /* height: calc(100vh * .7); */
 }  
 
