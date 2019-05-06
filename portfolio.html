@@ -13,63 +13,161 @@
 
   </head>
   <body>
-    <nav class="top-bar-container" data-sticky-container>
-        <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-            <div class="custom-topbar top-bar">
-            <div class="custom-topbar top-bar-left">
-                <ul class="custom-topbar menu" data-dropdown-menu>
-                <li><a href="#"><img class="logo" src="images/logo.png"></a></li>
-                <!-- <li><a href="#">Libby Duggan</a></li> -->
-                </ul>
+        <nav id="top-nav" class="top-bar-container" data-sticky-container>
+            <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+            
+                <div class="custom-topbar title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                    <!-- <div class="title-bar-left custom-topbar">
+                        <a href="#"><img class="logo" src="images/logo.png"></a>
+                    </div> -->
+                    <div class="custom-topbar title-bar-right">
+                        <button class="menu-icon" type="button" style="background-color: #e7cd3b!important" data-toggle></button>
+                    </div>
+                </div>
+    
+                <div class="custom-topbar top-bar" id="example-menu">
+                <div class="custom-topbar top-bar-left">
+                    <div data-magellan data-options="animationEasing: linear; animationDuration: 1200;">
+                        <a href="#splash"><img class="logo" src="images/logo.png"></a>
+                    </div>
+                </div>
+                <div class="custom-topbar top-bar-right">
+                    <ul class="custom-topbar menu" data-magellan data-options="animationEasing: linear; animationDuration: 1200;">
+                        <li class="nav-links"><a href="#about">about</a></li>
+                        <li class="nav-links"><a href="#projects">projects</a></li>
+                        <li class="nav-links"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+                </div>
             </div>
-            <div class="top-bar-right">
-                <ul class="custom-topbar nav-links menu">
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </div>
-            </div>
+        </nav>  
+    <section id="header" class="port-header">
+        <h1 class=large-font-white>Looking for something?</h1>
+    </section>
+
+    <section class="tags">
+        <div id ="stick-anchor"></div> 
+
+        <div class="port-tags">
+            <fieldset class="port-fields fieldset sticky">
+                <legend class="medium-font-black">Pick your poison</legend>
+                <!-- <legend>Language</legend> -->
+                <input id="checkbox1" type="checkbox"><label class="small-black-font" for="checkbox1">Javascript</label>
+                <input id="checkbox2" type="checkbox"><label class="small-black-font" for="checkbox2">Python</label>
+                <!-- <legend>Check these out</legend> -->
+                <input id="checkbox1" type="checkbox"><label class="small-black-font" for="checkbox1">Node</label>
+                <input id="checkbox2" type="checkbox"><label class="small-black-font" for="checkbox2">Flask</label>
+                <input id="checkbox3" type="checkbox"><label class="small-black-font" for="checkbox3">Express</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Mustache/Handlebars</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">Jinja</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox3">Mongo</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">MySQL</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">PostgreSQL</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequelize</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">Mongoose</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox3">Bootstrap</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">Foundation</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox3">Materal-UI</label>
+                <input id="checkbox1" type="checkbox"><label for="checkbox1">React</label>
+                <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
+                <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequel Alchemy</label>
+            </fieldset>
         </div>
-    </nav>
 
-    <section class="portfolio-blurb">
-        <p>
-           Looking for something in particular?  
-        </p>
     </section>
 
-    <section class="port-tags">
-        <fieldset class="fieldset">
-            <legend>Pick your poison</legend>
-            <!-- <legend>Language</legend> -->
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Javascript</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Python</label>
-            <!-- <legend>Check these out</legend> -->
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Node</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Flask</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Express</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Mustache/Handlebars</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Jinja</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Mongo</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">MySQL</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">PostgreSQL</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequelize</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">Mongoose</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Bootstrap</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">Foundation</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Materal-UI</label>
-            <input id="checkbox1" type="checkbox"><label for="checkbox1">React</label>
-            <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
-            <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequel Alchemy</label>
-
-
-        </fieldset>
-    </section>
 
     <section class="port-cards">
-            portfolio goes here
+
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
+        <div class="media-object">
+            <div class="media-object-section">
+                <div class="thumbnail">
+                <img src= "./images/schedulr-sml.png">
+                </div>
+            </div>
+            <div class="media-object-section main-section">
+                <h4>Dreams feel real while we're in them.</h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            </div>
+        </div>
 
         <ul>
             <li>Recipedia</li>
@@ -81,14 +179,46 @@
             <li>GoogleBooks API</li>
 
             <li>LearnPython scraper</li>
-            <li>simpson's clicky game</li>
+            <li>LearnCS scraper</li>
 
             <li>Trivia game</li>
-            <li>Starwards game</li>
+            <li>Star Wars game</li>
+            <li>Recipedia</li>
+            <li>Schedulr</li>
+            <li>brewIt API</li>
+            <li>BurgerPy</li>
 
+            <li>Simpson's clicky game</li>
+            <li>GoogleBooks API</li>
+
+            <li>LearnPython scraper</li>
+            <li>LearnCS scraper</li>
+
+            <li>Trivia game</li>
+            <li>Star Wars game</li>
+            <li>Recipedia</li>
+            <li>Schedulr</li>
+            <li>brewIt API</li>
+            <li>BurgerPy</li>
+
+            <li>Simpson's clicky game</li>
+            <li>GoogleBooks API</li>
+
+            <li>LearnPython scraper</li>
+            <li>LearnCS scraper</li>
+
+            <li>Trivia game</li>
+            <li>Star Wars game</li>
         </ul>
     </section>
 
-    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>AOS.init();</script>
+
 </body>
 </html>
