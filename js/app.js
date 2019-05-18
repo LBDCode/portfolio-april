@@ -38,14 +38,12 @@ $("input[type='checkbox']").change(function () {
 
 });
 
-// $('#contact-submit').click(function() {
-
-//     swal({
-//         text: "Thanks for reaching out - I'll be in touch.",
-//         button: false,
-//     });
-//     window.location("www.google.com");
-// });
+$('#contact-submit').click(function() {
+    swal({
+        text: "Thanks for reaching out - I'll be in touch.",
+        button: false,
+    });
+});
 
 
 
