@@ -17,11 +17,8 @@
             <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
             
                 <div class="custom-topbar title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-                    <!-- <div class="title-bar-left custom-topbar">
-                        <a href="#"><img class="logo" src="images/logo.png"></a>
-                    </div> -->
                     <div class="custom-topbar title-bar-right">
-                        <button class="menu-icon" type="button" style="background-color: #e7cd3b!important" data-toggle></button>
+                        <button class="menu-icon dark" type="button" data-toggle></button>
                     </div>
                 </div>
     
@@ -33,184 +30,245 @@
                 </div>
                 <div class="custom-topbar top-bar-right">
                     <ul class="custom-topbar menu" data-magellan data-options="animationEasing: linear; animationDuration: 1200;">
-                        <li class="nav-links"><a href="#about">about</a></li>
-                        <li class="nav-links"><a href="#projects">projects</a></li>
-                        <li class="nav-links"><a href="#contact">contact</a></li>
+                        <li class="nav-links"><a href="./index.html">home</a></li>
+                        <li class="nav-links"><a href="./index.html#about">about</a></li>
+                        <li class="nav-links"><a href="./index.html#projects">projects</a></li>
+                        <li class="nav-links"><a href="./index.html#contact">contact</a></li>
                     </ul>
                 </div>
                 </div>
             </div>
-        </nav>  
-    <section id="header" class="port-header">
-        <h1 class=large-font-white>Looking for something?</h1>
-    </section>
-
-    <section class="tags">
-        <div id ="stick-anchor"></div> 
-
-        <div class="port-tags">
-            <fieldset class="port-fields fieldset sticky">
-                <legend class="medium-font-black">Pick your poison</legend>
-                <!-- <legend>Language</legend> -->
-                <input id="javascript" type="checkbox"><label class="small-black-font" for="javascript">Javascript</label>
-                <input id="python" type="checkbox"><label class="small-black-font" for="checkbox2">Python</label>
-                <!-- <legend>Check these out</legend> -->
-                <input id="node" type="checkbox"><label class="small-black-font" for="checkbox1">Node</label>
-                <input id="flask" type="checkbox"><label class="small-black-font" for="checkbox2">Flask</label>
-                <input id="express" type="checkbox"><label class="small-black-font" for="checkbox3">Express</label>
-                <input id="handlebars" type="checkbox"><label for="checkbox1">Mustache/Handlebars</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Jinja</label>
-                <input id="checkbox3" type="checkbox"><label for="checkbox3">Mongo</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">MySQL</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">PostgreSQL</label>
-                <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequelize</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Mongoose</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
-                <input id="checkbox3" type="checkbox"><label for="checkbox3">Bootstrap</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Foundation</label>
-                <input id="material" type="checkbox"><label for="checkbox3">Materal-UI</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">React</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">PyMongo</label>
-                <input id="checkbox3" type="checkbox"><label for="checkbox3">Sequel Alchemy</label>
-            </fieldset>
-        </div>
-
-    </section>
-
-
-    <section class="port-cards">
-
-        <div class="media-object stack-for-small python flask">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+        </nav>
+    <div class="wrapper">      
+        <section class="grid-container">
+            <div class="grid-x grid-padding-x"> 
+                <div class="port-header cell small-12 medium-6">
+                    <h1 class="large-font-white">Looking <br>for something?</h1>
+                </div>
+                <div class="port-message cell small-12 medium-6 ">
+                    <div class="port-two-small">
+                        <div class="port-tags">
+                            <button class="hollow button port-button" id="react">React</button>
+                            <button class="hollow button port-button" id="javascript">Javascript</button>
+                            <button class="hollow button port-button" id="jquery">jQuery</button>
+                            <button class="hollow button port-button" id="python">Python</button>
+                            <button class="hollow button port-button" id="node">Node</button>
+                            <button class="hollow button port-button" id="express">Express</button>
+                            <button class="hollow button port-button" id="flask">Flask</button>
+                            <button class="hollow button port-button" id="mongodb">MongoDB</button>
+                            <button class="hollow button port-button" id="mysql">MySQL</button>
+                            <button class="hollow button port-button" id="postgreSQL">PostgreSQL</button>
+                            <button class="hollow button port-button" id="bootstrap">Bootstrap</button>
+                            <button class="hollow button port-button" id="foundation">Foundation</button>
+                            <button class="hollow button port-button" id="material">Material-UI</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="media-object-section">
-                <h4>Python</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object stack-for-small javascript express node">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+        </section>
+
+        <section class="port-cards">
+            <div class="media-object port-object stack-for-small python flask postgreSQL bootstrap">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/beerRecipes.png">
+                    </div>
+                </div>
+                <div class="media-object-section">
+                    <h4>
+                        brewIt API 
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>
+                    </h4> 
+                    <p class="small-black-font">brewIt is a public beer recipe API.  Sign up for an API key, and search or browse a curated database of beer recipes for your next homebrewing effort.</p>
                 </div>
             </div>
-            <div class="media-object-section javascript">
-                <h4>Javascript</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object stack-for-small python jinja">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <div class="media-object port-object stack-for-small react mongodb javascript express node material">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/recipedia.png">
+                    </div>
+                </div>
+                <div class="media-object-section">
+                    <h4>
+                        Recipedia 
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>
+                    </h4>
+                    <p class="small-black-font">Recipedia is a recipe finder and meal planning application that allows you to search the Edamam API for new, interesting recipes and add them to your weekely menu.  Once you've added recipes, you can build and text/email a shopping list of ingredients.</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Python2</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object stack-for-small javascript">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <!-- <div class="media-object port-object stack-for-small python flask jinja">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/burger-sml.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        BurgerPy
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>                    
+                    </h4>
+                    <p class="small-black-font">A dupe of the burgerFi website that allows the user to create an order from the existing menu, or customize a meal.</p>
+                </div>
+            </div> -->
+            <div class="media-object port-object stack-for-small javascript jquery mysql node express bootstrap">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/schedulr-sml.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        Schedulr
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>                    
+                    </h4>
+                    <p class="small-black-font">Schedulr is an appointment scheduling and notification application.  Targeted at small businesses, it allows clients to book, review, update, and cancel appointments. It also allows customers to review appointments.</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Javascript2</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object stack-for-small">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <div class="media-object port-object stack-for-small react mongodb express node bootstrap">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/mylibrary.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        MyLibrary
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-black-font">Interface with the GoogleBooks API to search for new books.  Build your own library of books you've read or want to read.</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Dreams feel real while we're in them.</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object stack-for-small material python">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <div class="media-object port-object stack-for-small react javascript">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/simpsons.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        Simpson's Clicky Game
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-black-font">How good is your memory?  Click each player's card once (and only once!).  Can you click them all without duplicating a selection?</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Material UI and Python</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <div class="media-object port-object stack-for-small python flask mysql foundation">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/learncs.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        r/LearnPython Scraper
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>
+                    </h4>
+                    <p class="small-black-font">Scrape content from reddit's LearnPython community.  Create an account, save and take notes on posts that you find interesting.</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Dreams feel real while we're in them.</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
-            </div>
-        </div>
-        <div class="media-object">
-            <div class="media-object-section">
-                <div class="thumbnail">
-                <img src= "./images/schedulr-sml.png">
+            <div class="media-object port-object stack-for-small mongodb node express jquery">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/learncs.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        r/LearnCompSci Scraper
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-black-font">Scrape new content from reddit's LearnCompSci community, save, and take notes on posts that interest you.</p>
                 </div>
             </div>
-            <div class="media-object-section main-section">
-                <h4>Dreams feel real while we're in them.</h4>
-                <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+            <div class="media-object port-object stack-for-small jQuery">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/rps.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        Rock Paper Scissors
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-black-font">A two-player rock, paper, scissors game with chat functionality.  RPS mutiplayer uses Google Firebase's real-time database to track score, user, and chat data.</p>
+                </div>
             </div>
-        </div>
+            <div class="media-object port-object stack-for-small jquery">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/trivia.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        BTTF Trivia Game
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-black-font">Test your knowledge of all things Back to the Future!  Take a timed trivia quiz, and make sure to submit your answer before the clock runs out.</p>
+                </div>
+            </div>
+            <div class="media-object port-object stack-for-small jquery">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/starwars.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4>
+                        Star Wars Battle Game
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="#" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>  
+                    </h4>
+                    <p class="small-black-font">The Starwars RPG pits your favorite Star Wars characters against one another.  Choose your character, and battle the rest.  Can you defeat all three opponents before your health points run out?</p>
+                </div>
+            </div>
 
-        <ul>
-            <li>Recipedia</li>
-            <li>Schedulr</li>
-            <li>brewIt API</li>
-            <li>BurgerPy</li>
-
-            <li>Simpson's clicky game</li>
-            <li>GoogleBooks API</li>
-
-            <li>LearnPython scraper</li>
-            <li>LearnCS scraper</li>
-
-            <li>Trivia game</li>
-            <li>Star Wars game</li>
-            <li>Recipedia</li>
-            <li>Schedulr</li>
-            <li>brewIt API</li>
-            <li>BurgerPy</li>
-
-            <li>Simpson's clicky game</li>
-            <li>GoogleBooks API</li>
-
-            <li>LearnPython scraper</li>
-            <li>LearnCS scraper</li>
-
-            <li>Trivia game</li>
-            <li>Star Wars game</li>
-            <li>Recipedia</li>
-            <li>Schedulr</li>
-            <li>brewIt API</li>
-            <li>BurgerPy</li>
-
-            <li>Simpson's clicky game</li>
-            <li>GoogleBooks API</li>
-
-            <li>LearnPython scraper</li>
-            <li>LearnCS scraper</li>
-
-            <li>Trivia game</li>
-            <li>Star Wars game</li>
-        </ul>
-    </section>
+        </section>
+    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
@@ -222,3 +280,8 @@
 
 </body>
 </html>
+
+<!-- 
+todo 
+fix item images & sizes
+-->

@@ -14,36 +14,36 @@ Foundation.Abide.defaults.validators['phone_number'] = phoneValidator;
 $(document).foundation();
 
 
-var checkedArray = [];
-var checkedCount = 0;
+var selectedArray = [];
+var selectedCount = 0;
     
-$("input[type='checkbox']").change(function () {
+$(".port-button").click(function () {
     var $self = $(this);
-    var checkbox = $self.attr("id");
+    var selected = $self.attr("id");
 
-    if ($self.is(":checked")) {
-        checkedCount++;
-        checkedArray.push(checkbox);
-    } else {
-        checkedCount--;
-        checkedArray = checkedArray.filter(val => val !== checkbox);
+    if (!(selectedArray.includes(selected))) {
+        selectedCount++;
+        selectedArray.push(selected);
+        $self.addClass("selected");
+        console.log("added: " + selectedCount, selectedArray);
+    } else if(selectedArray.includes(selected)) {
+        selectedCount--;
+        selectedArray = selectedArray.filter(val => val !== selected);
+        $self.removeClass("selected");
+        console.log("removed: " + selectedCount, selectedArray);
+
     }
     
-    if(checkedCount === 0) {
+    if(selectedCount === 0) {
         $(".media-object").show();
     } else{
         $(".media-object").hide();
-        checkedArray.map(item => $(".media-object." + item).show())
+        selectedArray.map(item => $(".media-object." + item).show())
     }
 
 });
 
-$('#contact-submit').click(function() {
-    swal({
-        text: "Thanks for reaching out - I'll be in touch.",
-        button: false,
-    });
-});
+
 
 
 

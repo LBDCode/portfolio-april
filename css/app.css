@@ -25,6 +25,7 @@ body {
 .custom-topbar {
     background-color:#fff!important;
     padding:0px !important;
+    color:rgb(58, 55, 55);
 }
 
 .custom-topbar a{
@@ -131,15 +132,23 @@ body {
     font-family: 'Lato', sans-serif!important;
 }
 
+.small-font-yellow {
+    font-size: 150%;
+    color: #e7cd3b;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif!important;
+}
+
 /* Greeting/splash: */
+#splash {
+    margin-bottom: 70px;
+}
 .greeting {
     margin: 30px 0;
     height: calc(100vh * .8);
-    /* border: 1px solid black; */
 }
 
 .greeting-two {
-    /* border: 1px solid black; */
     padding: 15px;
     background-color: #e7cd3b;
     margin: 30px 0;
@@ -148,14 +157,12 @@ body {
 }
 
 .greeting-message {
-    /* border: 1px solid black; */
     position: relative;
     margin: 30px 0;
     height: calc(100vh * .7);
 }
 
 .greeting-two-small {
-    /* border: 1px solid black; */
     position: absolute;
     bottom: 0;
     padding:10px 20px;
@@ -163,7 +170,7 @@ body {
 
 /* skill divs */
 .skill-icons {
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .skill-icon {
@@ -174,7 +181,11 @@ body {
 
 /* about section */
 .about{
-    padding: 80px 10px;
+    margin: 70px 10px 70px 10px;
+}
+
+.about-message {
+    margin:0;
 }
 
 .about-grid {
@@ -194,11 +205,7 @@ body {
 
 /* Current activity and grid: */
 .current {
-    /* margin: 40px 35px 40px 35px; */
-    padding: 15px;
-    /* background-color: rgba(19, 19, 16, 0.075); */
-    /* height: calc(100vh * .8); */
-    /* border: 1px solid black; */
+    margin: 70px 10px 70px 10px;
 }
 
 .current-wrapper {
@@ -207,7 +214,9 @@ body {
 }
 
 .current-message {
-    margin: 0 20px 60px 20px;
+    background-color: #e7cd3b;
+    margin: 40px 0;
+    padding: 40px 20px;
 }
 
 .current-message a{
@@ -236,6 +245,7 @@ body {
 
 .card-descrip {
     padding: 10px 0;
+    justify-content: space-between;
     background-color: #fff;
     font-size: 14px;
     font-family: 'Lato', sans-serif!important;
@@ -250,15 +260,18 @@ body {
 
 }
 
+.contact-greeting {
+    padding: 0 10px;
+}
+
 .contact-form {
     margin-top: 30px;
 }
 
 .contact-grid {
-    padding: 25px 15px;
+    padding: 25px 5px;
     margin: 30px 0;
     background-color: #e7cd3b;
-    /* height: calc(100vh * .7); */
 }
 
 .contact-field{
@@ -266,72 +279,108 @@ body {
 }
 
 .custom-button {
-    margin-left: 15px;
-    background-color: rgba(255, 255, 255, 0.411);
-    color: black; 
-}
-
-.swal-text {
-    background-color: #fff;
-    padding: 17px;
-    display: block;
-    margin: 22px;
-    text-align: center;
-    color:rgb(58, 55, 55);
-    font-weight: 600;
-    font-family: 'Lato', sans-serif!important;
-}
-
-.swal-button {
-    padding: 7px 19px;
     border-radius: 2px;
-    background-color: #e7cd3b;
-    font-size: 12px;
-    color: #fff;
-    font-family: 'Lato', sans-serif!important; 
-    border: none!important;
+    background-color: rgb(99, 94, 94);
+    color: #fff; 
 }
 
+.custom-button:hover {
+    background-color: #fff;
+    color: rgb(36, 34, 34); 
+    border-radius: 2px;
+}
 
 /* Portfolio page: */
 
 .port-header {
     padding: 15px;
-    background-color: #e7cd3b;
     margin: 30px 0;
-    height: calc(40vh);
+    background-color: #e7cd3b;
+    height: calc(55vh);
 }
 
-.tags{
-    margin-bottom: 60px;
+.port-message {
+    padding: 15px;
+    position: relative;
 }
+
+.port-two-small {
+    position: absolute;
+    bottom: 2px;
+}
+
 
 .port-tags {
-    /* margin-top: 30px 0!important; */
-    padding-top: 10px!important;
+    margin-top: 30px 0!important; 
+    padding: 22px!important;
 }
+
+.port-icons {
+    padding-right: 10px;
+    font-size: 22px;
+    color: #555555;
+}
+
+.port-spacer {
+    color:#e7cd3b; 
+    margin: 0 8px;
+}
+
+.port-button {
+    border: 2px solid #e7cd3b!important;
+    color: #e7cd3b!important;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.port-button:hover {
+    border: 2px solid #fff!important;
+    background-color: #e7cd3b9f!important;
+    color: #fff!important;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.selected {
+    border: 2px solid #fff!important;
+    background-color: #e7cd3b!important;
+    color: #fff!important;
+    border-radius: 5px;
+    margin: 5px; 
+}
+
+.selected:hover {
+    border: 2px solid #e7cd3b!important;
+    color: #e7cd3b!important;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 
 .port-fields {
     margin: 25px 0!important;
     background-color: #fff;
+    justify-content: center;
 }
 
-
-/* .links {
-    padding: 0 0 20px 15px;
+.port-object {
+    padding: 20px 10px;
 }
 
-.info-block {
-    height:150px;
-    width:150px;
-    margin:15px;
-    border: 1px solid grey;
-    text-align: center;
+.port-thumb {
+    width: 165px;
+    height: 110px;
+
 }
 
-.info-blurb {
-    margin:15px;
-} */
+.port-cards {
+    margin-top: 50px;
+}
+
+.links {
+    padding: 0 ;
+}
+
 
 
 
@@ -339,10 +388,21 @@ body {
 
 @media only screen and (max-width: 830px) {
     
+    .greeting-two {
+        height: calc(60vh)
+    }
+
+    .greeting-message {
+        height: calc(55vh)
+    }
+
+    .greeting-two-small {
+        position: absolute;
+        bottom: -20px;
+    }
 
     .current-wrapper {
        display: block;
-       /* margin: 0 35px; */
     }
 
     .current {
@@ -350,12 +410,40 @@ body {
         padding: 0px;
     }
 
-    .current-message {
+    /* .current-message {
         margin: 20px 0;
         padding:10px;
+    } */
+
+    .port-button {
+        padding: 5px;
     }
+
+    .large-font-white {
+        font-size: 220%;
+    }
+    
+
 }    
 
+@media only screen and (max-width: 703px) {
+
+    .greeting-two {
+        height: calc(50vh)
+    }
+
+    .greeting-message {
+        height: calc(45vh)
+    }
+
+    .port-two-small {
+        position: relative;
+    }
+
+    .port-cards {
+        margin-top: 15px;
+    }
+}
 
 @media only screen and (max-width: 640px) {
     .greeting-two {
@@ -364,14 +452,20 @@ body {
     
     .greeting-two-small {
         top: 30px;
+        padding: 10px;
+
     }
 
     .greeting-message {
-        height: calc(45vh)
+        height: calc(30vh)
     }
     
     .skill-icons {
-        margin-top:10px;
+        margin:20px 0px;
+    }
+
+    .about-message {
+        margin:20px 0;
     }
 
     .current {
@@ -379,23 +473,55 @@ body {
         padding: 0px;
         background-color: rgba(19, 19, 16, 0);
     }
-
+    
+    .current-wrapper {
+        margin-left: 0;
+    }
     .current-grid {
         margin: 0 !important;
     }
 
-
-
-    .current-message {
-        margin: 0;
-    
+    .medium-font-white {
+        font-size: 180%;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Lato', sans-serif!important;
+        line-height: 1;
     }
+
     .portfolio {
-        /* margin: 300px 0 0 0; */
         height: calc(100vh * .8);
-        /* border: 1px solid black; */
     }
 
+    .port-tags {
+        padding: 0!important;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .current-wrapper {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .port-button {
+        padding: 2px;
+        margin: 3px;
+    }
+
+    .medium-font-white {
+        font-size: 150%;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Lato', sans-serif!important;
+        line-height: 1;
+    }
 
 }
 
