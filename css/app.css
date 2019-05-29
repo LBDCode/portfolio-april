@@ -489,6 +489,10 @@ body {
         line-height: 1;
     }
 
+    .large-font-white {
+        font-size: 260%;
+    }
+
     .portfolio {
         height: calc(100vh * .8);
     }
@@ -513,6 +517,12 @@ body {
     .port-button {
         padding: 2px;
         margin: 3px;
+    }
+
+    .current-message {
+        background-color: #e7cd3b;
+        margin: 40px 0;
+        padding: 30px 10px;
     }
 
     .medium-font-white {
