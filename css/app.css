@@ -426,7 +426,7 @@ body {
 
 }    
 
-@media only screen and (max-width: 703px) {
+@media only screen and (max-width: 700px) {
 
     .greeting-two {
         height: calc(50vh)
@@ -442,6 +442,15 @@ body {
 
     .port-cards {
         margin-top: 15px;
+    }
+
+    .media-object-section {
+        text-align: center;
+    }
+
+    .port-thumb {
+        width: 280px!important;
+        height: 180px!important;
     }
 }
 
@@ -497,9 +506,20 @@ body {
         height: calc(100vh * .8);
     }
 
+    .media-object-section {
+        text-align: center;
+    }
+
+    .port-thumb {
+        width: 280px;
+        height: 180px;
+    }
+
     .port-tags {
         padding: 0!important;
     }
+
+    
 
 }
 
@@ -531,6 +551,15 @@ body {
         letter-spacing: 1px;
         font-family: 'Lato', sans-serif!important;
         line-height: 1;
+    }
+
+    .media-object-section {
+        text-align: center;
+    }
+
+    .port-thumb {
+        width: 220px!important;
+        height: 140px!important;
     }
 
 }
