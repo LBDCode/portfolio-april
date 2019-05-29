@@ -216,7 +216,7 @@ body {
 .current-message {
     background-color: #e7cd3b;
     margin: 40px 0;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .current-message a{
