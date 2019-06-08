@@ -30,7 +30,7 @@ body {
 
 .custom-topbar a{
     color:rgb(58, 55, 55);
-    padding: 10px 0px;
+    padding: 15px 0px;
     margin: 0 10px;
     font-size:18px; 
     font-weight: 600;
@@ -38,11 +38,9 @@ body {
 }
 
 .nav-links a:hover {
-    padding: 10px 0px 8px 0;
+    padding: 15px 0px 13px 0;
     border-bottom: 2px solid #e7cd3b;
 }
-
-
 
 .logo {
     width: 40px;
@@ -528,6 +526,10 @@ body {
 
     .wrapper {
         padding: 0;
+    }
+
+    .custom-topbar a {
+        font-size: 12px;
     }
 
     .current-wrapper {
