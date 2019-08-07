@@ -226,7 +226,6 @@ body {
 
 .current-wrapper {
     padding: 10px;
-    margin-left: 40px;
 }
 
 .current-message {
@@ -241,7 +240,6 @@ body {
 }
 
 .custom-card {
-    min-width: 300px;
     border: none;
     margin: 15px;
     background-color: #e7cd3b52!important;
@@ -268,12 +266,13 @@ body {
 }
 
 .mini-icon {
-    height:30px;
-    width:30px;
+    object-fit: contain;
+    width: 8%;
     margin: 0 15px;
 }
 
 .card-descrip {
+    text-align: center;
     padding: 10px 0;
     justify-content: space-between;
     background-color: #fff;
@@ -281,6 +280,7 @@ body {
     overflow: hidden!important;
     font-family: 'Lato', sans-serif!important;
 }
+
 
 
 
@@ -445,10 +445,10 @@ body {
         padding: 0px;
     }
 
-    /* .current-message {
-        margin: 20px 0;
-        padding:10px;
-    } */
+    .mini-icon {
+        width: 8%;
+        margin: 0 10px;
+    }
 
     .port-button {
         padding: 5px;
@@ -477,6 +477,11 @@ body {
 
     .port-cards {
         margin-top: 15px;
+    }
+
+    .mini-icon {
+        width: 7%;
+        margin: 0 5px;
     }
 
     .media-object-section {
@@ -523,11 +528,13 @@ body {
         background-color: rgba(19, 19, 16, 0);
     }
     
-    .current-wrapper {
-        margin-left: 0;
-    }
     .current-grid {
         margin: 0 !important;
+    }
+
+    .mini-icon {
+        width: 8%;
+        margin: 0 12px;
     }
 
     .medium-font-white {
@@ -575,7 +582,6 @@ body {
 
     .current-wrapper {
         padding: 0;
-        margin-left: 0;
     }
 
     .skill-icon {
@@ -592,6 +598,8 @@ body {
         margin: 40px 0;
         padding: 30px 10px;
     }
+
+
 
     
     #contact {
