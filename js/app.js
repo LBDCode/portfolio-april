@@ -1,3 +1,12 @@
+$(document).ready(function(){
+    $(".cards").on("mouseenter", "div", function(){						
+        $(this).find('.hover-card').fadeIn(400);
+    }).on("mouseleave", "div", function(){	
+        $(this).find('.hover-card').stop().fadeOut(100);
+    })	
+});
+
+
 function phoneValidator($el, required, parent) {
     if (!required) return true;
     // var raw = $el.val()
