@@ -215,6 +215,10 @@ body {
     color: rgb(58, 55, 55);
 }
 
+.info-link {
+    padding-top: 5px;
+}
+
 .info-link:hover {
     background-color: #e7cd3be0;
 }
@@ -239,6 +243,15 @@ body {
     text-decoration: none;
 }
 
+.current-link {
+    color:rgb(58, 55, 55)!important; 
+    text-decoration: underline!important;
+}
+
+.current-link:hover{
+    color:rgba(58, 55, 55, 0.575)!important; 
+}
+
 .custom-card {
     border: none;
     margin: 15px;
@@ -256,12 +269,21 @@ body {
     position: absolute;
 }
 
+.hover-content {
+    text-align:justify;
+    position: absolute;
+    padding: 0 15px;
+    top: 30%;
+}
+
 .hover-text {
+    margin: 0 auto;
     text-align: center;
 }
 
 .hover-links {
-    display: inline-flex;
+    margin-top: 10px!important;
+    text-align: center!important;
     margin: 0 auto;
 }
 
@@ -280,8 +302,6 @@ body {
     overflow: hidden!important;
     font-family: 'Lato', sans-serif!important;
 }
-
-
 
 
 /* Contact section */
@@ -421,6 +441,28 @@ body {
 
 /* Media queries: */
 
+@media only screen and (max-width: 950px) {
+
+    .hover-content {
+        text-align:justify;
+        position: absolute;
+        padding: 0 5px;
+        top: 20%;
+    }
+    
+    .hover-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .hover-links {
+        margin-top: 10px!important;
+        text-align: center!important;
+        margin: 0 auto;
+    }
+
+}
+
 @media only screen and (max-width: 830px) {
     
     .greeting-two {
@@ -444,6 +486,16 @@ body {
         margin: 30px 35px 40px 35px;
         padding: 0px;
     }
+
+
+    .hover-content{
+        position:relative;
+    }
+    
+    .hover-text {
+        display:none;
+    }
+    
 
     .mini-icon {
         width: 8%;
@@ -530,6 +582,26 @@ body {
     
     .current-grid {
         margin: 0 !important;
+    }    
+
+    .hover-content {
+        text-align:justify;
+        position: absolute;
+        padding: 0 15px!important;
+        top: 30%;
+        left: 0;
+    }
+    
+    .hover-text {
+        display: initial;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .hover-links {
+        margin-top: 10px!important;
+        text-align: center!important;
+        margin: 0 auto;
     }
 
     .mini-icon {
@@ -565,12 +637,33 @@ body {
     .port-tags {
         padding: 0!important;
     }
-
-    
+  
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
+
+    .hover-content {
+        text-align:justify;
+        position: absolute;
+        padding: 0 5px;
+        top: 20%;
+    }
+    
+    .hover-text {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .hover-links {
+        margin-top: 10px!important;
+        text-align: center!important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
 
     .wrapper {
         padding: 0;
@@ -582,6 +675,11 @@ body {
 
     .current-wrapper {
         padding: 0;
+    }
+
+    .grid-container {
+        padding-right: 0!important;
+        padding-left: 0!important;
     }
 
     .skill-icon {
@@ -598,9 +696,6 @@ body {
         margin: 40px 0;
         padding: 30px 10px;
     }
-
-
-
     
     #contact {
         margin: 50px auto;
