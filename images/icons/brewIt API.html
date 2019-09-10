@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5000/public_api/signin -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>brewIt API</title>
+    <script src="./brewIt API_files/bootstrap.min.js.download" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./brewIt API_files/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./brewIt API_files/bootstrap.min.css">
+    <script src="./brewIt API_files/jquery.min.js.download"></script>
+
+    <link rel="stylesheet" href="./brewIt API_files/api.css">
+
+    <script src="./brewIt API_files/ag-grid-community.min.noStyle.js.download"></script>
+    <link rel="stylesheet" href="./brewIt API_files/ag-grid.css">
+    <link rel="stylesheet" href="./brewIt API_files/ag-theme-balham.css">
+
+    <link rel="stylesheet" type="text/css" href="./brewIt API_files/slick.css">
+    <link rel="stylesheet" type="text/css" href="./brewIt API_files/slick-theme.css">
+
+</head>
+<body cz-shortcut-listen="true">
+    <div class="container-fluid api-container">
+        <div class="row convert-sidebar">
+            <aside class="p-0 cust-bg col-12 col-md-2 ">
+                <nav class="navbar navbar-expand-sm navbar-light align-items-start flex-md-column flex-row py-2">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="w-100 justify-content-between flex-md-column flex-row navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 text-nowrap font-weight-bold" href="http://127.0.0.1:5000/public_api"><img class="brand-logo" src="./brewIt API_files/logo2.png" <span="">brewIt API</a>
+                            </li>
+                            
+                                <li class="nav-item nav-cust">
+                                    <a class="nav-link pl-0 text-nowrap" href="http://127.0.0.1:5000/public_api/signin">sign in</a>
+                                </li>
+                            
+                            
+                                <li class="nav-item nav-cust ">
+                                    <a class="nav-link pl-0 text-nowrap" href="http://127.0.0.1:5000/public_api/signup">sign up</a>
+                                </li>
+                            
+                            <li class="nav-item nav-cust">
+                                <a class="nav-link pl-0 text-nowrap" href="http://127.0.0.1:5000/public_api/docs">documentation</a>
+                            </li>
+                            <li class="nav-item nav-cust">
+                                <a class="nav-link pl-0 text-nowrap" href="http://127.0.0.1:5000/">back to brewIt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+
+            <main class="col main-block">
+                
+                    
+                
+                
+
+<section class="col signin-block">
+    <div class="row section-row">
+        <h2 class="section-header">Sign in</h2>
+    </div>
+    <hr>
+    <hr>
+    <form method="POST" action="http://127.0.0.1:5000/public_api/signin" style="
+    padding: 30px 0;
+    /* margin: 0 auto!important; */
+">
+        <input id="csrf_token" name="csrf_token" type="hidden" value="Ijg0NjFkMWU1NDQ0ZjZhN2QzZmRhM2VhM2I5Y2IzYjUwMmYxMmU0MDMi.XVgVQw.K3XOEvzmRMmRhTIOZMF7dK7HnL8">
+        <fieldset class="form">
+            <div class="form-row">
+                <div class="form-group col-med-6">
+                    <label class="form-control-label" for="email">Email</label>
+                    
+                         <input class="form-control" id="email" name="email" required="" type="text" value="">
+                    
+                </div>
+                <div class="form-group col-med-6">
+                    <label class="form-control-label" for="password">Password</label>
+                    
+                         <input class="form-control" id="password" name="password" required="" type="password" value="">
+                    
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <input class="btn btn-outline-info" id="submitLogin" name="submitLogin" type="submit" value="Login">
+            <span>
+                <small class="text-muted ml-2"><a class="ml-2" href="http://127.0.0.1:5000/public_api/signin#">Forgot password?</a> </small>
+            </span>
+        </div>
+    </form>
+    <div>
+        <small class="text-muted ml-1">don't have an account?<a class="ml-2" href="http://127.0.0.1:5000/public_api/signup">Sign up</a> </small>
+    </div>
+</section>
+
+
+                <hr>
+                <hr>
+            </main>
+        </div>
+    </div>
+
+</body></html>

@@ -361,8 +361,12 @@ body {
     bottom: 2px;
 }
 
+.port-object {
+    text-align: justify!important;
+}
+
 .port-title {
-    margin-bottom: 0;
+    margin-bottom:2px;
 }
 
 
@@ -420,7 +424,7 @@ body {
 }
 
 .port-object {
-    padding: 20px 10px;
+    padding: 20px;
 }
 
 .port-thumb {
@@ -537,7 +541,7 @@ body {
         margin: 0 5px;
     }
 
-    .media-object-section {
+    .port-title{
         text-align: center;
     }
 
@@ -630,6 +634,15 @@ body {
         text-align: center;
     }
 
+    .port-content {
+        text-align: justify;
+    }
+
+    .small-font-gray {
+        text-align: justify;
+        padding: 0 20px;
+    }
+
     .port-thumb {
         width: 280px;
         height: 180px;
@@ -665,9 +678,12 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
+    .current {
+        margin: 30px 0 40px 0;
+    }
 
     .wrapper {
-        padding: 0;
+        padding: 20px;
     }
 
     .custom-topbar a {
@@ -693,9 +709,13 @@ body {
         margin: 3px;
     }
 
+    .about {
+        padding: 0;
+    }
+
     .current-message {
         margin: 40px 0;
-        padding: 30px 10px;
+        padding: 30px 15px;
     }
     
     #contact {
@@ -718,8 +738,8 @@ body {
         line-height: 1;
     }
 
-    .media-object-section {
-        text-align: center;
+    .medium-font-yellow {
+        font-size: 160%;
     }
 
     .port-thumb {

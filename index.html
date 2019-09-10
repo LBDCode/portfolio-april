@@ -12,6 +12,26 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147567004-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147567004-1');
+    </script>
+    <script>
+        var getOutboundLink = function(url) {
+            gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': url,
+            'transport_type': 'beacon',
+            'event_callback': function(){window.open(url);}
+            });
+        }
+    </script>
   </head>
   <body>
 
@@ -73,7 +93,7 @@
                     <div class="grid-container small-12 medium-8">
                         <div class="grid-x grid-padding-x small-up-1 large-up-3">
                             <div class="cell info-link">
-                                <a href="#" target="new">
+                                <a href="Resume.pdf" download="resume" target="new">
                                     <h3 class="strong-medium-black">
                                         <span>Resume</span>
                                         <span><i class="icons fi-page"></i></span>
@@ -91,7 +111,7 @@
                                 </a>
                             </div> 
                             <div class="cell info-link">
-                                <a href="https://github.com/LBDCode" target="new">
+                                <a href="https://github.com/LBDCode" onclick="getOutboundLink('https://github.com/LBDCode'); return false;" target="new">
                                     <h3 class="strong-medium-black">
                                         <span>GitHub</span>
                                         <span><i class="icons fi-social-github"></i></span>
@@ -124,80 +144,79 @@
                 <div class="grid-container">
                     <div class="grid-x grid-padding-x cards small-up-1 medium-up-2">
                         <div class="cell">
-                        <div class="custom-card card">
-                            <div class="show-card">
-                                <img class="card-image" src="images/portfolio/recipedia.png">
-                                <div class="card-descrip card-section">
-                                    <img class="mini-icon" src="images/icons/react.png">
-                                    <img class="mini-icon" src="images/icons/express.png">
-                                    <img class="mini-icon" src="images/icons/mongo.png">
-                                    <img class="mini-icon" src="images/icons/node.png">
-                                    <img class="mini-icon" src="images/icons/material.png">
-                                </div>
-                            </div>
-                            <div class="hover-card card" style="display: none; opacity: 1;">
-                                <div class="hover-content">
-                                    <p class="hover-text">Search for new recipes, create a weekly menu, and build and share your grocery list with Recipedia.</p>
-                                    <div class="hover-links">
-                                        <a href="https://github.com/LBDCode/Project3" target="new">code</a>
-                                        |
-                                        <a href="https://www.my-recipedia.com/" target="new">demo</a>
+                            <div class="custom-card card" >
+                                <div class="show-card">
+                                    <img class="card-image" src="images/portfolio/beerRecipes.png">
+                                    <div class="card-descrip card-section">
+                                        <img class="mini-icon" src="images/icons/jinja2.png">
+                                        <img class="mini-icon" src="images/icons/flask.png">
+                                        <img class="mini-icon" src="images/icons/postgres2.png">
+                                        <img class="mini-icon" src="images/icons/python.png">
+                                        <img class="mini-icon" src="images/icons/bootstrap.jpg">
                                     </div>
                                 </div>
+                                <div class="hover-card card" style="display: none; opacity: 1;">
+                                    <div class="hover-content">
+                                        <p class="hover-text">Browse brewIt's database of homebrew recipes, or use it's public API to build your own app. </p>
+                                        <div class="hover-links">
+                                            <a href="https://github.com/LBDCode/brewit_refactor" onclick="getOutboundLink('https://github.com/LBDCode/brewit_refactor'); return false;" target="new">code</a>
+                                            |
+                                            <a href="https://www.brewit.tech/" onclick="getOutboundLink('https://www.brewit.tech/'); return false;" target="new">demo</a>
+                                        </div>
+                                    </div>
+                                </div>        
                             </div>
-                        </div>
                         </div>
                         <div class="cell">
-                        <div class="custom-card card" >
-                            <div class="show-card">
-                                <img class="card-image" src="images/portfolio/beerRecipes.png">
-                                <div class="card-descrip card-section">
-                                    <img class="mini-icon" src="images/icons/jinja2.png">
-                                    <img class="mini-icon" src="images/icons/flask.png">
-                                    <img class="mini-icon" src="images/icons/postgres2.png">
-                                    <img class="mini-icon" src="images/icons/python.png">
-                                    <img class="mini-icon" src="images/icons/bootstrap.jpg">
+                            <div class="custom-card card">
+                                <div class="show-card">
+                                    <img class="card-image" src="images/portfolio/bibliofile.png">
+                                    <div class="card-descrip card-section">
+                                        <img class="mini-icon" src="images/icons/react.png">
+                                        <img class="mini-icon" src="images/icons/express.png">
+                                        <img class="mini-icon" src="images/icons/mongo.png">
+                                        <img class="mini-icon" src="images/icons/node.png">
+                                        <img class="mini-icon" src="images/icons/reactbootstrap.png">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="hover-card card" style="display: none; opacity: 1;">
-                                <div class="hover-content">
-                                    <p class="hover-text">Browse brewIt's database of homebrew recipes, or use it's public API to build your own app. </p>
-                                    <div class="hover-links">
-                                        <a href="https://github.com/LBDCode/brewit-api" target="new">code</a>
-                                        |
-                                        <a href="http://www.brewit.tech/" target="new">demo</a>
+                                <div class="hover-card" style="display: none; opacity: 1;">
+                                    <div class="hover-content">
+                                        <p class="hover-text">Keep your reading list organized and up to date, find new books to read, and share your favorites.</p>
+                                        <div class="hover-links">
+                                            <a href="https://github.com/LBDCode/bibliofile" onclick="getOutboundLink('https://github.com/LBDCode/bibliofile'); return false;" target="new">code</a>
+                                            |
+                                            <a href="https://www.bibliofile.info" onclick="getOutboundLink('https://www.bibliofile.info'); return false;" target="new">demo</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-        
-                        </div>
-                        </div>                
+                        </div>                 
                     </div>
-                    <div class="grid-x grid-padding-x cards small-up-1 medium-up-2">
+                    <div class="grid-x grid-padding-x cards small-up-1 medium-up-2">                    
                         <div class="cell">
-                        <div class="custom-card card">
-                            <div class="show-card">
-                                <img class="card-image" src="images/portfolio/bibliofile.png">
-                                <div class="card-descrip card-section">
-                                    <img class="mini-icon" src="images/icons/react.png">
-                                    <img class="mini-icon" src="images/icons/express.png">
-                                    <img class="mini-icon" src="images/icons/mongo.png">
-                                    <img class="mini-icon" src="images/icons/node.png">
-                                    <img class="mini-icon" src="images/icons/reactbootstrap.png">
+                            <div class="custom-card card">
+                                <div class="show-card">
+                                    <img class="card-image" src="images/portfolio/recipedia.png">
+                                    <div class="card-descrip card-section">
+                                        <img class="mini-icon" src="images/icons/react.png">
+                                        <img class="mini-icon" src="images/icons/express.png">
+                                        <img class="mini-icon" src="images/icons/mongo.png">
+                                        <img class="mini-icon" src="images/icons/node.png">
+                                        <img class="mini-icon" src="images/icons/material.png">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="hover-card" style="display: none; opacity: 1;">
-                                <div class="hover-content">
-                                    <p class="hover-text">Keep your reading list organized an up to date, find new books to read, and share your favorites.</p>
-                                    <div class="hover-links">
-                                        <a href="https://github.com/LBDCode/google-books" target="new">code</a>
-                                        |
-                                        <a href="http://www.brewit.tech/" target="new">demo</a>
+                                <div class="hover-card card" style="display: none; opacity: 1;">
+                                    <div class="hover-content">
+                                        <p class="hover-text">Search for new recipes, create a weekly menu, and build and share your grocery list with Recipedia.</p>
+                                        <div class="hover-links">
+                                            <a href="https://github.com/LBDCode/Project3" onclick="getOutboundLink('https://github.com/LBDCode/Project3'); return false;" target="new">code</a>
+                                            |
+                                            <a href="https://www.my-recipedia.com/" onclick="getOutboundLink('https://www.my-recipedia.com/'); return false;" target="new">demo</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div> 
                         <div class="cell">
                         <div class="custom-card card">
                             <div class="show-card">
@@ -214,9 +233,9 @@
                                     <div class="hover-content">
                                         <p class="hover-text">Book and manage your business's appointments with Schedulr.</p>
                                         <div class="hover-links">
-                                            <a href="https://github.com/LBDCode/GroupProject-2" target="new">code</a>
+                                            <a href="https://github.com/LBDCode/GroupProject-2" onclick="getOutboundLink('https://github.com/LBDCode/GroupProject-2'); return false;" target="new">code</a>
                                             |
-                                            <a href="https://app-schedulr.herokuapp.com/" target="new">demo</a>
+                                            <a href="https://app-schedulr.herokuapp.com/" onclick="getOutboundLink('https://app-schedulr.herokuapp.com/'); return false;" target="new">demo</a>
                                         </div>
                                     </div>
                             </div>
@@ -245,7 +264,7 @@
                         <h4 class="large-font-black">Let's talk.</h4>
                     </div>
                     <form action="https://formsubmit.co/libby.duggan@gmail.com" method="POST" accept-charset="UTF-8" data-abide novalidate class="contact-form">
-                        <input type="hidden" name="_next" value="www.libby.tech">
+                        <input type="hidden" name="_next" value="https://www.libby.tech">
                         <div data-abide-error class="alert callout contact-field" style="display: none;">
                             <p><i class="fi-alert"></i> Looks like we're missing some information.</p>
                         </div>

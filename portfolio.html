@@ -11,6 +11,25 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147567004-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147567004-1');
+    </script>
+    <script>
+        var getOutboundLink = function(url) {
+            gtag('event', 'click', {
+            'event_category': 'outbound',
+            'event_label': url,
+            'transport_type': 'beacon',
+            'event_callback': function(){window.open(url);}
+            });
+        }
+    </script>
   </head>
   <body>
         <nav id="top-nav" class="top-bar-container" data-sticky-container>
@@ -50,8 +69,8 @@
                         <div class="port-tags">
                             <button class="hollow button port-button" id="react">React</button>
                             <button class="hollow button port-button" id="javascript">Javascript</button>
-                            <button class="hollow button port-button" id="jquery">jQuery</button>
                             <button class="hollow button port-button" id="python">Python</button>
+                            <button class="hollow button port-button" id="jquery">jQuery</button>
                             <button class="hollow button port-button" id="node">Node</button>
                             <button class="hollow button port-button" id="express">Express</button>
                             <button class="hollow button port-button" id="flask">Flask</button>
@@ -59,7 +78,6 @@
                             <button class="hollow button port-button" id="mysql">MySQL</button>
                             <button class="hollow button port-button" id="postgreSQL">PostgreSQL</button>
                             <button class="hollow button port-button" id="bootstrap">Bootstrap</button>
-                            <button class="hollow button port-button" id="foundation">Foundation</button>
                             <button class="hollow button port-button" id="material">Material-UI</button>
                             <button class="hollow button port-button" id="aws">AWS</button>
                             <button class="hollow button port-button" id="docker">Docker</button>
@@ -71,10 +89,10 @@
         </section>
 
         <section class="port-cards">
-            <div class="media-object port-object stack-for-small python flask postgreSQL bootstrap">
+            <div class="media-object port-object stack-for-small python flask postgreSQL bootstrap aws docker">
                 <div class="media-object-section">
                     <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/portfolio/beerRecipes.png">
+                    <img class="port-thumb" src= "./images/portfolio/beerRecipes2.jpg">
                     </div>
                 </div>
                 <div class="media-object-section">
@@ -82,38 +100,20 @@
                         brewIt
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/brewit-api" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/brewit_refactor" onclick="getOutboundLink('https://github.com/LBDCode/brewit_refactor'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://www.brewit.tech" onclick="getOutboundLink('https://www.brewit.tech'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>
                     </h4> 
-                    <p class="small-font-gray"><strong>Tech: </strong>Python, Flask, Postgres, AWS, EC2 </p> 
-                    <p class="small-black-font">brewIt is a public beer recipe API.  Sign up for an API key, and search or browse a curated database of beer recipes for your next homebrewing effort.</p>
+                    <p class="small-font-gray"><strong>Tech: </strong>Python, Flask, PostgreSQL, SQLAlchemy, Flask-Login, Flask-CORS, AWS, EC2, Docker </p> 
+                    <p class="small-black-font port-content">brewIt is a public beer recipe database and API designed with the hobbyist homebrewer in mind.
+                        Search and browse hundreds of beer recipes, or sign up for an API key to access a curated collection of beer 
+                        recipes for your next project.  Hosted on AWS EC2 with Docker.</p>
                 </div>
             </div>
-            <div class="media-object port-object stack-for-small react mongodb javascript express node material">
+            <div class="media-object port-object stack-for-small react mongodb express node bootstrap aws docker">
                 <div class="media-object-section">
                     <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/recipedia.png">
-                    </div>
-                </div>
-                <div class="media-object-section">
-                    <h4 class="port-title">
-                        Recipedia 
-                        <span class="port-spacer"> | </span>
-                        <span>
-                            <a href="https://github.com/LBDCode/Project3" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="https://www.my-recipedia.com/" target="new"><i class="port-icons fi-link"></i></a>
-                        </span>
-                    </h4>
-                    <p class="small-font-gray"><strong>Tech: </strong>React,Node, Express, MongoDB, Mongoose, Material-UI, AWS, EC2 </p> 
-                    <p class="small-font-gray"><strong>Group Project Members: </strong> Sara Austin, Libby Duggan, Ksenia Malysheva, David Padilla</p> 
-                    <p class="small-black-font">Recipedia is a recipe finder and meal planning application that allows you to search the Edamam API for new, interesting recipes and add them to your weekely menu.  Once you've added recipes, you can build and text/email a shopping list of ingredients.</p>
-                </div>
-            </div>
-            <div class="media-object port-object stack-for-small react mongodb express node bootstrap">
-                <div class="media-object-section">
-                    <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/portfolio/bibliofile.png">
+                    <img class="port-thumb" src= "./images/portfolio/bibliofile2.png">
                     </div>
                 </div>
                 <div class="media-object-section main-section">
@@ -121,18 +121,38 @@
                         Bibliofile
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/google-books" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="#" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/bibliofile" onclick="getOutboundLink('https://github.com/LBDCode/bibliofile'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://www.bibliofile.info" onclick="getOutboundLink('https://www.bibliofile.info'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>   
                     </h4>
-                    <p class="small-font-gray"><strong>Tech: </strong>Node, Express, MongoDB, React, Nexmo, Nodemailer, AWS, EC2 </p> 
-                    <p class="small-black-font">Interface with the GoogleBooks API to search for new books.  Build your own library of books you've read or want to read.</p>
+                    <p class="small-font-gray"><strong>Tech: </strong>Node, Express, MongoDB, React, Nexmo, Nodemailer, AWS, EC2, Docker </p> 
+                    <p class="small-black-font port-content">Interface with the GoogleBooks API to search through over 2.5M volumes and find new reading material.  Build your own library, rate your reads, and share books with your friends and family via email or text/SMS.  Hosted on AWS EC2 with Docker.</p>
                 </div>
             </div>
+            <div class="media-object port-object stack-for-small react mongodb javascript express node material">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/portfolio/recipedia2.png">
+                    </div>
+                </div>
+                <div class="media-object-section">
+                    <h4 class="port-title">
+                        Recipedia 
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="https://github.com/LBDCode/Project3" onclick="getOutboundLink('https://github.com/LBDCode/Project3'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://www.my-recipedia.com/" onclick="getOutboundLink('https://www.my-recipedia.com/'); return false;" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>
+                    </h4>
+                    <p class="small-font-gray"><strong>Tech: </strong>React,Node, Express, MongoDB, Mongoose, Material-UI, AWS, EC2 </p> 
+                    <p class="small-font-gray"><strong>Group Members: </strong> Sara Austin, Libby Duggan, Ksenia Malysheva, David Padilla</p> 
+                    <p class="small-black-font port-content">Recipedia is a recipe finder and meal planning application that allows you to search the Edamam API for new, interesting recipes and add them to your weekely menu.  Once you've added recipes, you can build and text/email a shopping list of ingredients.  Hosted on AWS EC2.</p>    
+                </div>
+            </div>    
             <div class="media-object port-object stack-for-small javascript jquery mysql node express bootstrap">
                 <div class="media-object-section">
                     <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/schedulr-sml.png">
+                    <img class="port-thumb" src= "./images/portfolio/schedulr2.png">
                     </div>
                 </div>
                 <div class="media-object-section main-section">
@@ -140,13 +160,32 @@
                         Schedulr
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/GroupProject-2" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="https://app-schedulr.herokuapp.com" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/GroupProject-2" onclick="getOutboundLink('https://github.com/LBDCode/GroupProject-2'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://app-schedulr.herokuapp.com" onclick="getOutboundLink('https://app-schedulr.herokuapp.com'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>                    
                     </h4>
                     <p class="small-font-gray"><strong>Tech: </strong>Node, Express, MySQL, Sequelize, jQuery, Bootstrap, Handlebars, Nexmo, Passport Auth</p> 
-                    <p class="small-font-gray"><strong>Group Project Members: </strong> Sara Austin, Libby Duggan, Ksenia Malysheva, David Padilla</p> 
-                    <p class="small-black-font">Schedulr is an appointment scheduling and notification application targeted at small businesses.  It allows clients to create an account and book, review, update, and cancel appointments, while also supporting customer notifications via Nexmo.</p>
+                    <p class="small-font-gray"><strong>Group Members: </strong> Sara Austin, Libby Duggan, Ksenia Malysheva, David Padilla</p> 
+                    <p class="small-black-font port-content">Schedulr is an appointment scheduling and notification application targeted at small businesses.  It allows clients to create an account and book, review, update, and cancel appointments, while also supporting customer notifications via Nexmo.</p>
+                </div>
+            </div>
+            <div class="media-object port-object stack-for-small mongodb node express javascript jquery docker aws">
+                <div class="media-object-section">
+                    <div class="thumbnail">
+                    <img class="port-thumb" src= "./images/learncs.png">
+                    </div>
+                </div>
+                <div class="media-object-section main-section">
+                    <h4 class="port-title">
+                        r/LearnCompSci Scraper
+                        <span class="port-spacer"> | </span>
+                        <span>
+                            <a href="https://github.com/LBDCode/scraperApp" onclick="getOutboundLink('https://github.com/LBDCode/scraperApp'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="http://cs-scraper.tk" onclick="getOutboundLink('http://cs-scraper.tk'); return false;" target="new"><i class="port-icons fi-link"></i></a>
+                        </span>   
+                    </h4>
+                    <p class="small-font-gray"><strong>Tech: </strong>Node, MongoDB, Mongoose, Cheerio, Handlebars, jQuery, AWS, EC2, Docker</p>
+                    <p class="small-black-font port-content">Scrape new content from reddit's LearnCompSci community, save and take notes on interesting posts.  Hosted on AWS EC2 with Docker.</p>
                 </div>
             </div>
             <div class="media-object port-object stack-for-small python flask bootstrap mongodb">
@@ -160,37 +199,19 @@
                         BurgerPy
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/burgerpy" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="http://18.218.33.187/" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/burgerpy" onclick="getOutboundLink('https://github.com/LBDCode/burgerpy'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://www.burgerpy.tk" onclick="getOutboundLink('https://www.burgerpy.tk'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>   
                     </h4>
                     <p class="small-font-gray"><strong>Tech: </strong>Python, Flask, MongoDB, PyMongo, AWS, EC2 </p> 
-                    <p class="small-black-font">An early attempt at a basic python app.  BurgerPy has 'almost' crud functionality, allowing the user to create, view, and modify burgers, saving them to a Mongo database.  Hosted on AWS EC2. </p>
+                    <p class="small-black-font port-content">An early attempt at a basic python app.  BurgerPy has 'almost' crud functionality, allowing the user to create, view, and modify burgers, saving them to a Mongo database.  Hosted on AWS EC2. </p>
                 </div>
             </div>
-            <div class="media-object port-object stack-for-small mongodb node express jquery docker aws">
+
+            <div class="media-object port-object stack-for-small javascript jquery bootstrap">
                 <div class="media-object-section">
                     <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/learncs.png">
-                    </div>
-                </div>
-                <div class="media-object-section main-section">
-                    <h4 class="port-title">
-                        r/LearnCompSci Scraper
-                        <span class="port-spacer"> | </span>
-                        <span>
-                            <a href="https://github.com/LBDCode/scraperApp" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="http://13.58.208.154/" target="new"><i class="port-icons fi-link"></i></a>
-                        </span>   
-                    </h4>
-                    <p class="small-font-gray"><strong>Tech: </strong>Node, MongoDB, Mongoose, Cheerio, Handlebars, jQuery, AWS, EC2, Docker</p>
-                    <p class="small-black-font">Scrape new content from reddit's LearnCompSci community, save and take notes on interesting posts.  Hosted on AWS EC2 with Docker.</p>
-                </div>
-            </div>
-            <div class="media-object port-object stack-for-small jquery">
-                <div class="media-object-section">
-                    <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/trivia.png">
+                    <img class="port-thumb" src= "./images/trivia2.PNG">
                     </div>
                 </div>
                 <div class="media-object-section main-section">
@@ -198,18 +219,18 @@
                         BTTF Trivia Game
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/Trivia" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="https://lbdcode.github.io/Trivia/" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/Trivia" onclick="getOutboundLink('https://github.com/LBDCode/Trivia'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://lbdcode.github.io/Trivia/" onclick="getOutboundLink('https://lbdcode.github.io/Trivia/'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>   
                     </h4>
                     <p class="small-font-gray"><strong>Tech: </strong>jQuery, CSS, HTML</p>
-                    <p class="small-black-font">Test your knowledge of all things Back to the Future!  Take a timed trivia quiz, and make sure to submit your answer before the clock runs out.</p>
+                    <p class="small-black-font port-content">Test your knowledge of all things Back to the Future!  Take a timed trivia quiz, and make sure to submit your answer before the clock runs out.</p>
                 </div>
             </div>
-            <div class="media-object port-object stack-for-small jquery">
+            <div class="media-object port-object stack-for-small javascript jquery">
                 <div class="media-object-section">
                     <div class="thumbnail">
-                    <img class="port-thumb" src= "./images/starwars.png">
+                    <img class="port-thumb" src= "./images/starwars2.PNG">
                     </div>
                 </div>
                 <div class="media-object-section main-section">
@@ -217,12 +238,12 @@
                         Star Wars Battle Game
                         <span class="port-spacer"> | </span>
                         <span>
-                            <a href="https://github.com/LBDCode/Starwars" target="new"><i class="port-icons fi-social-github"></i></a>
-                            <a href="https://lbdcode.github.io/Starwars/" target="new"><i class="port-icons fi-link"></i></a>
+                            <a href="https://github.com/LBDCode/Starwars" onclick="getOutboundLink('https://github.com/LBDCode/Starwars'); return false;" target="new"><i class="port-icons fi-social-github"></i></a>
+                            <a href="https://lbdcode.github.io/Starwars/" onclick="getOutboundLink('https://lbdcode.github.io/Starwars/'); return false;" target="new"><i class="port-icons fi-link"></i></a>
                         </span>  
                     </h4>
                     <h5 class="small-font-gray"><strong>Tech: </strong>jQuery, CSS, HTML</h5> 
-                    <p class="small-black-font">The Starwars RPG pits your favorite Star Wars characters against one another.  Choose your character, and battle the rest.  Can you defeat all three opponents before your health points run out?</p>
+                    <p class="small-black-font port-content">The Starwars RPG pits your favorite Star Wars characters against one another.  Choose your character, and battle the rest.  Can you defeat all three opponents before your health points run out?</p>
                 </div>
             </div>
         </section>
